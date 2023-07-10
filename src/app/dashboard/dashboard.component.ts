@@ -11,14 +11,11 @@ export class DashboardComponent {
 
   doughnutChartOptions: ChartOptions<'doughnut'> = {
     responsive: true,
-    aspectRatio: 4,
+    aspectRatio: 3,
+    borderColor: "#64CCC5",
   };
   doughnutChartLabels = ['Internal', 'External'];
-  doughnutChartColors = [
-    {
-      backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56']
-    }
-  ];
+
   doughnutChartDatasets = [{
     data: [300, 500]
   }];
@@ -38,16 +35,17 @@ export class DashboardComponent {
     datasets: [
       {
         data: [65, 59, 80, 81, 56, 55, 40],
-        label: 'Series A',
+        label: 'Expenses',
         fill: true,
         tension: 0.5,
-        backgroundColor: 'rgba(255,0,0,0.3)'
+        borderColor: "#176B87",
+        backgroundColor: '#176B87'
       }
     ]
   };
   lineChartOptions: ChartOptions<'line'> = {
     responsive: true,
-    aspectRatio: 2,
+    aspectRatio: 3,
   };
   lineChartLegend = true;
 

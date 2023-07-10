@@ -1,0 +1,24 @@
+.dark-color {
+    color: #176B87;
+}
+
+.light-color {
+    color: #64CCC5;
+}
+
+.dark-background {
+    background-color: #176B87;
+}
+
+.light-backgound {
+    background-color: #64CCC5;
+}
+
+.top-card {
+    background-color: #DAFFFB;
+    border: none;
+}
+
+.top-card.content.header {
+    color: #176B87;
+}
