@@ -3,14 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+
+import { NgxSemanticModule } from 'ngx-semantic';
+import { NgChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxSemanticModule,
+    NgChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
