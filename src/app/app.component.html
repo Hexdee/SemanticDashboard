@@ -1,23 +1,23 @@
 <div class="ui sidebar secondary vertical menu sidebar-menu" [ngClass]="{'visible': isSidebarOpen}" id="sidebar">
 
-  <a class="active item">
+  <a routerLink="/dashboard" routerLinkActive="active" class="item">
     <div>
       <i class="icon tachometer alternate"></i>
       Dashboard
     </div>
   </a>
-  <a class="item">
+  <a routerLink="/settings" routerLinkActive="active" class="item">
     <div><i class="cogs icon"></i>Settings</div>
   </a>
 
-  <a href="#" class="item">
+  <a routerLink="/charts" routerLinkActive="active" class="item">
     <div>
       <i class="icon chart line"></i>
       Charts
     </div>
   </a>
 
-  <a href="#" class="item">
+  <a routerLink="/calendar" routerLinkActive="active" class="item">
     <div>
       <i class="icon calendar alternate"></i>
       Calendar

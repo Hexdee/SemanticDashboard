@@ -4,7 +4,7 @@
             <div class="ui fluid card top-card" style="border: none;">
                 <div class="content">
                     <div class="ui left floated header">
-                        <i class="icon shopping cart dark-color"></i>
+                        <i class="icon chart line dark-color"></i>
                     </div>
                     <div class="meta dark-color">
                         Total earnings
@@ -21,7 +21,7 @@
             <div class="ui fluid card top-card">
                 <div class="content">
                     <div class="ui left floated header">
-                        <i class="icon shopping cart dark-color"></i>
+                        <i class="icon chart line dark-color"></i>
                     </div>
                     <div class="meta dark-color">
                         Total spending
@@ -38,7 +38,7 @@
             <div class="ui fluid card top-card">
                 <div class="content">
                     <div class="ui left floated header">
-                        <i class="icon shopping cart dark-color"></i>
+                        <i class="icon briefcase dark-color"></i>
                     </div>
                     <div class="meta dark-color">
                         Total Savings
@@ -55,7 +55,7 @@
             <div class="ui fluid card top-card">
                 <div class="content">
                     <div class="ui left floated header">
-                        <i class="icon shopping cart dark-color"></i>
+                        <i class="icon bullseye dark-color"></i>
                     </div>
                     <div class="meta dark-color">
                         Monthly goal
@@ -78,79 +78,66 @@
     </div> -->
 
     <div class="ui grid stackable padded">
-        <div class="twelve wide computer eight wide tablet sixteen wide mobile column">
+        <div class="ten wide computer eight wide tablet sixteen wide mobile column">
             <div class="content">
                 <canvas baseChart [type]="'doughnut'" [datasets]="doughnutChartDatasets" [labels]="doughnutChartLabels"
                     [options]="doughnutChartOptions" [plugins]="doughnutChartPlugins" [legend]="doughnutChartLegend">
                 </canvas>
             </div>
-            <p class="heading dark-color">
-                Expenses for the month of July
-            </p>
+            <!-- <p class="heading dark-color">
+            Expenses for the month of July
+        </p> -->
         </div>
 
-        <div class="four wide computer sixteen wide tablet sixteen wide mobile column">
+        <div class="six wide computer sixteen wide tablet sixteen wide mobile column">
             <div class="ui header dark-color">
                 Transactions
             </div>
             <div class="ui fluid card top-card">
                 <div class="content">
-                    <div class="ui left floated header">
-                        <i class="icon shopping cart dark-color"></i>
-                    </div>
-                    <div class="meta dark-color">
-                        Monthly goal
+                    <img class="left floated mini ui rounded image" src="/assets/elliot.jpg">
+                    <div class="ui right floated header">
+                        +$1,000
                     </div>
                     <div class="header">
                         <div class="ui header dark-color">
-                            $50,000
+                            John Doe
                         </div>
+                    </div>
+                    <div class="meta dark-color">
+                        5:29pm
                     </div>
                 </div>
             </div>
             <div class="ui fluid card top-card">
                 <div class="content">
-                    <div class="ui left floated header">
-                        <i class="icon shopping cart dark-color"></i>
-                    </div>
-                    <div class="meta dark-color">
-                        Monthly goal
+                    <img class="left floated mini ui rounded image" src="/assets/helen.jpg">
+                    <div class="ui right floated header">
+                        +$5,678
                     </div>
                     <div class="header">
                         <div class="ui header dark-color">
-                            $50,000
+                            Christopher Helen
                         </div>
+                    </div>
+                    <div class="meta dark-color">
+                        12:30pm
                     </div>
                 </div>
             </div>
             <div class="ui fluid card top-card">
                 <div class="content">
-                    <div class="ui left floated header">
-                        <i class="icon shopping cart dark-color"></i>
-                    </div>
-                    <div class="meta dark-color">
-                        Monthly goal
+                    <img class="left floated mini ui rounded image" src="/assets/jenny.jpg">
+                    <div class="ui right floated header">
+                        +$10,500
                     </div>
                     <div class="header">
                         <div class="ui header dark-color">
-                            $50,000
+                            Henry Jenny
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="ui fluid card top-card">
-                <div class="content">
-                    <div class="ui left floated header">
-                        <i class="icon shopping cart dark-color"></i>
                     </div>
                     <div class="meta dark-color">
-                        Monthly goal
-                    </div>
-                    <div class="header">
-                        <div class="ui header dark-color">
-                            $50,000
-                        </div>
+                        2:39am
                     </div>
                 </div>
             </div>

@@ -39,7 +39,7 @@ export class DashboardComponent {
         fill: true,
         tension: 0.5,
         borderColor: "#176B87",
-        backgroundColor: '#176B87'
+        backgroundColor: '#64CCC5'
       }
     ]
   };
