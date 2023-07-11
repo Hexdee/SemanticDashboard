@@ -13,6 +13,8 @@ import { CalendarComponent } from './calendar/calendar.component';
 import { CalendarModule, DateAdapter } from 'angular-calendar';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +29,7 @@ import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
     NgxSemanticModule,
     NgChartsModule,
     CalendarModule.forRoot({ provide: DateAdapter, useFactory: adapterFactory }),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,83 @@
-<p>settings works!</p>
+<div sui-container class="main-container">
+    <main class="ui grid stackable padded">
+        <div class="four wide computer eight wide tablet sixteen wide mobile column">
+            <div class="ui card">
+                <div class="image">
+                    <img src="/assets/kristy.png">
+                </div>
+                <div class="content">
+                    <a class="header" style="color: #176B87;">Kristy</a>
+                    <div class="meta">
+                        <span class="date dark-color">Joined in 2013</span>
+                    </div>
+                    <div class="description" style="color: #176B87;">
+                        Kristy is an art director living in New York.
+                    </div>
+                </div>
+                <div class=" extra content" style="color: #176B87;">
+                    <a>
+                        <i class="user icon dark-color"></i>
+                        22 Friends
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="ten wide computer eight wide tablet sixteen wide mobile column dark-color">
+            <header>
+                <h1 sui-header class="dark-color">Account Settings</h1>
+            </header>
+            <form (ngSubmit)="onSubmit()" sui-form>
+                <div suiFormField>
+                    <label>Name</label>
+                    <div suiFormFields suiWidth="two">
+                        <div suiFormField>
+                            <input [(ngModel)]="firstName" type="text" name="firstName" placeholder="First Name"
+                                required>
+                        </div>
+                        <div suiFormField>
+                            <input [(ngModel)]="lastName" type="text" name="lastName" placeholder="Last Name"
+                                required="">
+                        </div>
+                    </div>
+                </div>
+                <div suiFormField>
+                    <label>E-mail</label>
+                    <input [(ngModel)]="email" type="email" name="email" placeholder="john@doe.com" required="">
+                </div>
+                <div suiFormField>
+                    <label>Phone number</label>
+                    <input type="number" name="phoneNumber" placeholder="+123-5435-5433" [(ngModel)]="phoneNumber">
+                </div>
+
+                <div suiFormFields suiWidth="two">
+                    <div suiFormField>
+                        <label>Country</label>
+                        <sui-select name="country" suiPlaceholder="Country" [suiOptions]="languages"
+                            [(ngModel)]="language"></sui-select>
+                    </div>
+                    <div suiFormField>
+                        <label>Occupation</label>
+                        <sui-select name="occupation" [(ngModel)]="occupation" suiPlaceholder="Occupation"
+                            [suiOptions]="occupations"></sui-select>
+                    </div>
+                </div>
+
+                <div suiFormField>
+                    <label>Theme</label>
+                    <div class="ui radio checkbox">
+                        <input type="radio" name="lightMode" value="true" [(ngModel)]="lightMode" />
+                        <label>Light Mode</label>
+                    </div>
+                </div>
+                <div suiFormField>
+                    <div class="ui radio checkbox">
+                        <input type="radio" name="lightMode" value="false" [(ngModel)]="lightMode" />
+                        <label>Dark Mode</label>
+                    </div>
+                </div>
+                <button sui-button type="submit" style="background-color: #64CCC5; color: #DAFFFB;">Submit</button>
+
+            </form>
+        </div>
+    </main>
+</div>

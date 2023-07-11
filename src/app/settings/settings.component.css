@@ -1,0 +1,44 @@
+.main-container {
+    color: #176B87;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+label {
+    color: #176B87;
+}
+
+
+.dark-color {
+    color: #176B87;
+}
+
+.darker-color {
+    color: #001C30;
+}
+
+.light-color {
+    color: #64CCC5;
+}
+
+.lighter-color {
+    color: #DAFFFB;
+}
+
+.dark-background {
+    background-color: #176B87;
+}
+
+.darker-background {
+    background-color: #001C30;
+}
+
+.light-backgound {
+    background-color: #64CCC5;
+}
+
+.lighter-backgound {
+    background-color: #DAFFFB;
+}
