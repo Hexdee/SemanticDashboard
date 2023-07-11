@@ -6,8 +6,8 @@
     justify-content: center;
 }
 
-label {
-    color: #176B87;
+.label {
+    color: #176B87 !important;
 }
 
 

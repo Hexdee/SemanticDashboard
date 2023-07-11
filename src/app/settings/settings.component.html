@@ -28,7 +28,7 @@
             </header>
             <form (ngSubmit)="onSubmit()" sui-form>
                 <div suiFormField>
-                    <label>Name</label>
+                    <label class="label">Name</label>
                     <div suiFormFields suiWidth="two">
                         <div suiFormField>
                             <input [(ngModel)]="firstName" type="text" name="firstName" placeholder="First Name"
@@ -41,38 +41,38 @@
                     </div>
                 </div>
                 <div suiFormField>
-                    <label>E-mail</label>
+                    <label class="label">E-mail</label>
                     <input [(ngModel)]="email" type="email" name="email" placeholder="john@doe.com" required="">
                 </div>
                 <div suiFormField>
-                    <label>Phone number</label>
+                    <label class="label">Phone number</label>
                     <input type="number" name="phoneNumber" placeholder="+123-5435-5433" [(ngModel)]="phoneNumber">
                 </div>
 
                 <div suiFormFields suiWidth="two">
                     <div suiFormField>
-                        <label>Country</label>
+                        <label class="label">Country</label>
                         <sui-select name="country" suiPlaceholder="Country" [suiOptions]="languages"
                             [(ngModel)]="language"></sui-select>
                     </div>
                     <div suiFormField>
-                        <label>Occupation</label>
+                        <label class="label">Occupation</label>
                         <sui-select name="occupation" [(ngModel)]="occupation" suiPlaceholder="Occupation"
                             [suiOptions]="occupations"></sui-select>
                     </div>
                 </div>
 
                 <div suiFormField>
-                    <label>Theme</label>
+                    <label class="label">Theme</label>
                     <div class="ui radio checkbox">
                         <input type="radio" name="lightMode" value="true" [(ngModel)]="lightMode" />
-                        <label>Light Mode</label>
+                        <label class="label">Light Mode</label>
                     </div>
                 </div>
                 <div suiFormField>
                     <div class="ui radio checkbox">
                         <input type="radio" name="lightMode" value="false" [(ngModel)]="lightMode" />
-                        <label>Dark Mode</label>
+                        <label class="label">Dark Mode</label>
                     </div>
                 </div>
                 <button sui-button type="submit" style="background-color: #64CCC5; color: #DAFFFB;">Submit</button>
