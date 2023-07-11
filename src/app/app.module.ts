@@ -10,6 +10,8 @@ import { NgChartsModule } from 'ng2-charts';
 import { SettingsComponent } from './settings/settings.component';
 import { ChartsComponent } from './charts/charts.component';
 import { CalendarComponent } from './calendar/calendar.component';
+import { CalendarModule, DateAdapter } from 'angular-calendar';
+import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,7 @@ import { CalendarComponent } from './calendar/calendar.component';
     AppRoutingModule,
     NgxSemanticModule,
     NgChartsModule,
+    CalendarModule.forRoot({ provide: DateAdapter, useFactory: adapterFactory }),
   ],
   providers: [],
   bootstrap: [AppComponent]

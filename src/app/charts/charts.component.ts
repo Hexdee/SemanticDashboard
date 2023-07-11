@@ -8,7 +8,7 @@ import { ChartConfiguration, ChartOptions } from 'chart.js';
 })
 export class ChartsComponent {
 
-  public scatterChartDatasets: ChartConfiguration<'scatter'>['data']['datasets'] = [
+  scatterChartDatasets: ChartConfiguration<'scatter'>['data']['datasets'] = [
     {
       data: [
         { x: 1, y: 1 },
@@ -22,11 +22,11 @@ export class ChartsComponent {
     },
   ];
 
-  public scatterChartOptions: ChartConfiguration<'scatter'>['options'] = {
+  scatterChartOptions: ChartConfiguration<'scatter'>['options'] = {
     responsive: true,
   };
 
-  public bubbleChartOptions: ChartConfiguration<'bubble'>['options'] = {
+  bubbleChartOptions: ChartConfiguration<'bubble'>['options'] = {
     responsive: true,
     scales: {
       x: {
@@ -39,9 +39,9 @@ export class ChartsComponent {
       }
     }
   };
-  public bubbleChartLegend = true;
+  bubbleChartLegend = true;
 
-  public bubbleChartDatasets: ChartConfiguration<'bubble'>['data']['datasets'] = [
+  bubbleChartDatasets: ChartConfiguration<'bubble'>['data']['datasets'] = [
     {
       data: [
         { x: 10, y: 10, r: 10 },
@@ -54,42 +54,42 @@ export class ChartsComponent {
   ];
 
   // PolarArea
-  public polarAreaChartLabels: string[] = ['Download Sales', 'In-Store Sales', 'Mail Sales', 'Telesales', 'Corporate Sales'];
-  public polarAreaChartDatasets: ChartConfiguration<'polarArea'>['data']['datasets'] = [
+  polarAreaChartLabels: string[] = ['Download Sales', 'In-Store Sales', 'Mail Sales', 'Telesales', 'Corporate Sales'];
+  polarAreaChartDatasets: ChartConfiguration<'polarArea'>['data']['datasets'] = [
     { data: [300, 500, 100, 40, 120] }
   ];
-  public polarAreaLegend = true;
+  polarAreaLegend = true;
 
-  public polarAreaOptions: ChartConfiguration<'polarArea'>['options'] = {
+  polarAreaOptions: ChartConfiguration<'polarArea'>['options'] = {
     responsive: true,
   };
 
-  public radarChartOptions: ChartConfiguration<'radar'>['options'] = {
+  radarChartOptions: ChartConfiguration<'radar'>['options'] = {
     responsive: true,
   };
-  public radarChartLabels: string[] = ['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'];
+  radarChartLabels: string[] = ['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'];
 
-  public radarChartDatasets: ChartConfiguration<'radar'>['data']['datasets'] = [
+  radarChartDatasets: ChartConfiguration<'radar'>['data']['datasets'] = [
     { data: [65, 59, 90, 81, 56, 55, 40], label: 'Series A' },
     { data: [28, 48, 40, 19, 96, 27, 100], label: 'Series B' }
   ];
 
   // Doughnut
-  public doughnutChartLabels: string[] = ['Download Sales', 'In-Store Sales', 'Mail-Order Sales'];
-  public doughnutChartDatasets: ChartConfiguration<'doughnut'>['data']['datasets'] = [
+  doughnutChartLabels: string[] = ['Download Sales', 'In-Store Sales', 'Mail-Order Sales'];
+  doughnutChartDatasets: ChartConfiguration<'doughnut'>['data']['datasets'] = [
     { data: [350, 450, 100], label: 'Series A' },
     { data: [50, 150, 120], label: 'Series B' },
     { data: [250, 130, 70], label: 'Series C' }
   ];
 
-  public doughnutChartOptions: ChartConfiguration<'doughnut'>['options'] = {
+  doughnutChartOptions: ChartConfiguration<'doughnut'>['options'] = {
     responsive: true
   };
 
-  public barChartLegend = true;
-  public barChartPlugins = [];
+  barChartLegend = true;
+  barChartPlugins = [];
 
-  public barChartData: ChartConfiguration<'bar'>['data'] = {
+  barChartData: ChartConfiguration<'bar'>['data'] = {
     labels: ['2006', '2007', '2008', '2009', '2010', '2011', '2012'],
     datasets: [
       { data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A' },
@@ -97,22 +97,22 @@ export class ChartsComponent {
     ]
   };
 
-  public barChartOptions: ChartConfiguration<'bar'>['options'] = {
+  barChartOptions: ChartConfiguration<'bar'>['options'] = {
     responsive: true,
   };
 
   // Pie
-  public pieChartOptions: ChartOptions<'pie'> = {
+  pieChartOptions: ChartOptions<'pie'> = {
     responsive: true,
   };
-  public pieChartLabels = [['Download', 'Sales'], ['In', 'Store', 'Sales'], 'Mail Sales'];
-  public pieChartDatasets = [{
+  pieChartLabels = [['Download', 'Sales'], ['In', 'Store', 'Sales'], 'Mail Sales'];
+  pieChartDatasets = [{
     data: [300, 500, 100]
   }];
-  public pieChartLegend = true;
-  public pieChartPlugins = [];
+  pieChartLegend = true;
+  pieChartPlugins = [];
 
-  public lineChartData: ChartConfiguration<'line'>['data'] = {
+  lineChartData: ChartConfiguration<'line'>['data'] = {
     labels: [
       'January',
       'February',
@@ -133,9 +133,9 @@ export class ChartsComponent {
       }
     ]
   };
-  public lineChartOptions: ChartOptions<'line'> = {
+  lineChartOptions: ChartOptions<'line'> = {
     responsive: true
   };
-  public lineChartLegend = true;
+  lineChartLegend = true;
 
 }
